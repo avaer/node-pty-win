@@ -35,9 +35,6 @@
     "url": "git://github.com/modulesio/node-pty-win.git"
   },
   "scripts": {
-    "install": "node scripts/install.js",
-    "postinstall": "node scripts/post-install.js",
-    "prepublish": "npm run tsc",
     "test": "cross-env NODE_ENV=test mocha -R spec lib/*.test.js",
     "tsc": "tsc",
     "tslint": "tslint src/**/*.ts"
