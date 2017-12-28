@@ -1,0 +1,47 @@
+{
+  "author": {
+    "name": "Avaer Kazmer <a@modules.io>"
+  },
+  "bugs": {
+    "url": "https://github.com/modulesio/node-pty-win/issues"
+  },
+  "dependencies": {
+    "nan": "^2.6.2"
+  },
+  "description": "Windows prebuilt for node-pty",
+  "devDependencies": {
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^6.0.58",
+    "cross-env": "^3.2.4",
+    "mocha": "^3.1.2",
+    "pollUntil": "^1.0.3",
+    "tslint": "^4.3.1",
+    "typescript": "^2.1.4"
+  },
+  "homepage": "https://github.com/modulesio/node-pty-win",
+  "keywords": [
+    "pty",
+    "tty",
+    "terminal",
+    "pseudoterminal",
+    "forkpty",
+    "openpty"
+  ],
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "name": "node-pty-win",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/modulesio/node-pty-win.git"
+  },
+  "scripts": {
+    "install": "node scripts/install.js",
+    "postinstall": "node scripts/post-install.js",
+    "prepublish": "npm run tsc",
+    "test": "cross-env NODE_ENV=test mocha -R spec lib/*.test.js",
+    "tsc": "tsc",
+    "tslint": "tslint src/**/*.ts"
+  },
+  "types": "./lib/index.d.ts",
+  "version": "0.0.1"
+}
